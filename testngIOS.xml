@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" parallel="tests">
+    <parameter name="urlIOS1" value="http://127.0.0.1:4723/wd/hub"/>
+    <test name="Test Basics 1">
+        <parameter name="urlIOS" value="http://127.0.0.1:4723/wd/hub"/>
+        <classes>
+            <class name="IOSAutomation.CartCheckOutTest"/>
+        </classes>
+    </test>
+
+    <test name="Test Basics 2">
+        <parameter name="urlAndroid" value="http://127.0.0.1:4724/wd/hub"/>
+        <classes>
+            <class name="AndroidAutomation.CheckOutCartTest"/>
+        </classes>
+    </test>
+</suite>
